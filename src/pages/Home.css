@@ -1,0 +1,135 @@
+.navbar{
+    background: linear-gradient(to right, rgba(200, 120, 0, 0.6), #18c0fd9a);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 99%;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-left: 9px;
+
+}
+
+.navtext{
+    color: rgb(255, 255, 255) !important;
+}
+
+.nav-link {
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white !important;
+    color: rgb(255, 255, 255) !important;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-link.active::after {
+    width: 100%;
+  }  
+
+.home-page header {
+    position: relative;
+    overflow: hidden;
+}
+
+.home-page header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../utils/img/photo-1602837385569-08ac19ec83af.avif);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
+    z-index: -1;
+}
+
+.navebartext{
+    text-decoration: none;
+    font-family: Verdana;
+    color: rgb(255, 255, 255);
+    font-size: large;
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 5rem;
+    font-family: fantasy;
+    
+}
+
+
+.maintext{
+    color: #ffffff;
+    text-shadow: 0px 5px 10px #000000;
+}
+
+.maintext1{
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 80px;
+    text-shadow: 0px 5px 10px #000000;
+}
+
+.btn123{
+    padding: 20px 40px 20px 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(200, 120, 0);
+    border-radius: 10px;
+    font-family: Verdana;
+    border: none;
+    transition: .5s ease;
+}
+
+.btn123:hover{
+    background-color: rgb(133, 80, 0);
+    transition: .7s ease;
+}
+
+.menu-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../utils/img/menu-img.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px) brightness(30%);
+    z-index: -1;
+}
+
+img {
+    border-style: solid;
+    border-width: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    header h1 {
+        font-size: 3rem;
+    }
+}
